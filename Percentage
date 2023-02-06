@@ -1,0 +1,15 @@
+import java.util.*;
+public class percentage{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter marks of student :");
+        Float a = sc.nextFloat(); 
+        Float b = sc.nextFloat(); 
+        Float c = sc.nextFloat(); 
+        Float d = sc.nextFloat(); 
+        Float e = sc.nextFloat(); 
+        Float sum = a*b*c*d*e;
+        Float percent = sum/5;
+        System.out.println("percentage is ="+percent);
+    }
+}
