@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        int a,b,add,subtract,multiply,mod;
+        float divide;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter two numbers - ");
+        a=scanner.nextInt();
+        b=scanner.nextInt();
+        add=a+b;
+        subtract=a-b;
+        multiply=a*b;
+        divide=a/b;
+        mod=a%b;
+        System.out.println("sum="+add);
+        System.out.println("differnce="+subtract);
+        System.out.println("multiplication="+multiply);
+        System.out.println("division= "+divide);
+        System.out.println("modulus="+mod);
+        
+    }
+}
