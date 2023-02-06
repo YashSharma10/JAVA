@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main{
+	public static void main(String args[]){
+	int mins;
+	long yr,month,day,remmyr,remmon;
+	Scanner obj=new Scanner(System.in);
+	System.out.print("Enter minutes:");
+ mins=obj.nextInt();
+	yr=mins/(365*24*60);
+	remmyr=mins%(365*24*60);
+	month=remmyr/43800;
+ remmon=remmyr%43800;
+ day=remmon/1440;
+	System.out.print(yr+"years" +month+"months" +day+ "days");
+	}
+}
