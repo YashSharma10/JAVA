@@ -1,22 +1,18 @@
 import java.util.*;
-public class Main{
+public class calculator{
     public static void main(String[] args){
-        int a,b,add,subtract,multiply,mod;
-        float divide;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("enter two numbers - ");
-        a=scanner.nextInt();
-        b=scanner.nextInt();
-        add=a+b;
-        subtract=a-b;
-        multiply=a*b;
-        divide=a/b;
-        mod=a%b;
-        System.out.println("sum="+add);
-        System.out.println("differnce="+subtract);
-        System.out.println("multiplication="+multiply);
-        System.out.println("division= "+divide);
-        System.out.println("modulus="+mod);
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number 1 -");
+        int a = sc.nextInt();
+        System.out.println("Enter number 2 - ");
+        int b = sc.nextInt();
+        int sum =a+b;
+        System.out.println("sum = "+sum);
+        int diff=a-b;
+        System.out.println("Difference = "+diff);
+        int mul=a*b;
+        System.out.println("Multiply = "+mul);
+        int div=a/b;
+        System.out.println("division = "+div);
     }
 }
