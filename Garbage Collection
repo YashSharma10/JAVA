@@ -1,0 +1,15 @@
+class employee {
+
+    public static void main(String[] args) {
+        employee obj = new employee();
+        System.out.println("Hash code before unreference: " + obj.hashCode());
+        obj = null;
+        System.out.println("Reference has been nullified.");
+        employee obj2 = new employee();
+        obj = obj2;
+        System.out.println("Hash code after assigning the reference to another object: " + obj.hashCode());
+        obj = new employee();
+        System.out.println("Hash code after creating an anonymous object: " + obj.hashCode());
+        
+    }
+}
