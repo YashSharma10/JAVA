@@ -1,0 +1,29 @@
+class ABC   {  
+private int[] val;
+void setVal(int[] arr)   
+{  
+this.val = arr; // line 7  
+}  
+void display()  
+{  
+int size = (this.val).length;  
+for(int i = 0; i < size; i++)  
+{  
+System.out.print(this.val[i] + " ");  
+}  
+}  
+}  
+
+public class GetterSetterExample2  
+{  
+public static void main(String argvs[])  
+{  
+ABC obj = new ABC();  
+int mainArr[] = {3, 4, 6, 8, 78, 9};  
+obj.setVal(mainArr);  
+obj.display();  
+mainArr[0] = -1;  
+System.out.println();  
+obj.display();
+}
+}
