@@ -1,0 +1,17 @@
+public class Length {
+  public static void main(String[] args) {
+    
+    if (args.length > 0) {
+      
+      String input = args[0];
+      
+      int length = input.length();
+      
+      System.out.println("The input string is: " + input);
+      System.out.println("The length of the input string is: " + length);
+    } else {
+      
+      System.out.println("Please provide a string as a command line argument.");
+    }
+  }
+}
