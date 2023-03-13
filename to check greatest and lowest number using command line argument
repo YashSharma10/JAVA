@@ -1,0 +1,19 @@
+public class GreatestLowest {
+  public static void main(String[] args) {
+    
+    if (args.length != 3) {
+      System.out.println("Please enter three numbers as arguments.");
+      return;
+    }
+    
+    int a = Integer.parseInt(args[0]);
+    int b = Integer.parseInt(args[1]);
+    int c = Integer.parseInt(args[2]);
+    // find the greatest and lowest among them
+    int greatest = Math.max(a, Math.max(b, c));
+    int lowest = Math.min(a, Math.min(b, c));
+    
+    System.out.println("The greatest number is " + greatest);
+    System.out.println("The lowest number is " + lowest);
+  }
+}
