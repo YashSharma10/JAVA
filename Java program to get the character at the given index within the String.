@@ -1,0 +1,8 @@
+public class GetCharAtIndex {
+   public static void main(String[] args) {
+      String str = args[0]; // get the input string from command line argument
+      int index = Integer.parseInt(args[1]); // get the index from command line argument and convert it to integer
+      char ch = str.charAt(index); // get the character at the given index
+      System.out.println("Character at index " + index + " is " + ch); // print the character
+   }
+}
