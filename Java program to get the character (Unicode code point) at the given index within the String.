@@ -1,0 +1,8 @@
+public class GetUnicodeAtIndex {
+   public static void main(String[] args) {
+      String str = args[0]; // get the input string from command line argument
+      int index = Integer.parseInt(args[1]); // get the index from command line argument and convert it to integer
+      int codePoint = str.codePointAt(index); // get the Unicode code point of the character at the given index
+      System.out.println("Unicode code point at index " + index + " is " + codePoint); // print the Unicode code point
+   }
+}
